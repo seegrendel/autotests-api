@@ -57,4 +57,6 @@ class GetUserResponseSchema(BaseModel):
     """
     Описание структуры запроса получения пользователя.
     """
+    model_config = ConfigDict(populate_by_name=True)
+
     user: UserSchema
